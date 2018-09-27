@@ -1,8 +1,7 @@
 ## What is it?
-------
 Display customizable & colored text on terminal with PHP
+
 ## How to use?
-------
 ```
 <?php
 require_once(__DIR__) . '/Autoloader.php';
@@ -24,5 +23,7 @@ Color::display('4. http://www.blogdaren.com' . PHP_EOL . PHP_EOL, 'yellow', 'blu
 $colored_text = Color::getColoredString('5. http://www.blogdaren.com' . PHP_EOL . PHP_EOL, 'white', 'cyan');
 echo $colored_text;
 ```
+
 ## Demonstrate
+![demo](https://github.com/blogdaren/CustomTerminalColor/blob/master/image/demo.png)
 
