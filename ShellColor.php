@@ -1,7 +1,7 @@
 <?php
 /**
  * @script   ShellColor.php
- * @brief    display colored text on terminal
+ * @brief    display colorful text on terminal
  * @author   blogdaren<blogdaren@163.com>
  * @version  1.0.0
  * @modify   2018-09-28
@@ -50,7 +50,7 @@ class ShellColor
     );
 
     /**
-     * extra decoration
+     * decoration 
      * @var  private
      */
     static private $_decorations = array(
@@ -84,36 +84,36 @@ class ShellColor
      * @param    string         $text              原始文本
      * @param    string         $foregroundColor   前景色代码
      * @param    string         $backgroundColor   背景色代码
-     * @param    string|array   $decoration        额外修饰代码
+     * @param    string|array   $decoration        修饰代码
      *
      * @return   string
      */
     static public function getColorfulText($text = '', $foregroundColor = null, $backgroundColor = null, $decoration = '')
     {
-        $coloredString = "";
+        $colorfulText = "";
         $many_decorations = !is_array($decoration) ? array($decoration) : $decoration;
 
         foreach($many_decorations as $decoration)
         {
             if(isset(static::$_decorations[$decoration])) 
             {
-                $coloredString .= "\033[" . static::$_decorations[$decoration] . "m";
+                $colorfulText .= "\033[" . static::$_decorations[$decoration] . "m";
             }
         }
 
         if(isset(static::$_foregroundColors[$foregroundColor])) 
         {
-            $coloredString .= "\033[" . static::$_foregroundColors[$foregroundColor] . "m";
+            $colorfulText .= "\033[" . static::$_foregroundColors[$foregroundColor] . "m";
         }
 
         if(isset(static::$_backgroundColors[$backgroundColor])) 
         {
-            $coloredString .= "\033[" . static::$_backgroundColors[$backgroundColor] . "m";
+            $colorfulText .= "\033[" . static::$_backgroundColors[$backgroundColor] . "m";
         }
 
-        $coloredString .= $text . "\033[0m";
+        $colorfulText .= $text . "\033[0m";
 
-        return $coloredString;
+        return $colorfulText;
     }
 
 }

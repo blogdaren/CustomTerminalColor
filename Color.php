@@ -15,78 +15,78 @@ class Color
     /**
      * @brief    show info in level 
      *
-     * @param    string  $string
+     * @param    string  $text
      *
      * @return   string
      */
-    static public function showInfo($string)
+    static public function showInfo($text)
     {
-        echo ShellColor::getColorfulText($string, 'black', 'green');
+        echo ShellColor::getColorfulText($text, 'black', 'green');
     }
 
     /**
      * @brief    show warn in level 
      *
-     * @param    string  $string
+     * @param    string  $text
      *
      * @return   string
      */
-    static public function showWarning($string)
+    static public function showWarning($text)
     {
-        echo ShellColor::getColorfulText($string, 'black', 'yellow');
+        echo ShellColor::getColorfulText($text, 'black', 'yellow');
     }
 
     /**
      * @brief    show error in level
      *
-     * @param    string  $string
+     * @param    string  $text
      *
      * @return   string
      */
-    static public function showError($string)
+    static public function showError($text)
     {
-        echo ShellColor::getColorfulText($string, 'white', 'red');
+        echo ShellColor::getColorfulText($text, 'white', 'red');
     }
 
     /**
      * @brief    get colored string
      *
-     * @param    string  $string
+     * @param    string  $text
      * @param    string  $fg
      * @param    string  $bg
      *
      * @return   string
      */
-    static public function getColorfulText($string, $fg = 'yellow', $bg = 'green', $decoration = '')
+    static public function getColorfulText($text, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
-        return ShellColor::getColorfulText($string, $fg, $bg, $decoration);
+        return ShellColor::getColorfulText($text, $fg, $bg, $decoration);
     }
 
     /**
      * @brief    display colored custom string  -> will be removed in future !!!
      *
-     * @param    string  $string
+     * @param    string  $text
      * @param    string  $fg
      * @param    string  $bg
      *
      * @return   none
      */
-    static public function display($string, $fg = 'yellow', $bg = 'green', $decoration = '')
+    static public function display($text, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
-        echo self::show($string, $fg, $bg, $decoration);
+        echo self::show($text, $fg, $bg, $decoration);
     }
 
     /**
      * @brief    display colored custom string 
      *
-     * @param    string  $string
+     * @param    string  $text
      * @param    string  $fg
      * @param    string  $bg
      *
      * @return   none
      */
-    static public function show($string, $fg = 'yellow', $bg = 'green', $decoration = '')
+    static public function show($text, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
-        echo self::getColorfulText($string, $fg, $bg, $decoration);
+        echo self::getColorfulText($text, $fg, $bg, $decoration);
     }
 }
