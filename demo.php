@@ -16,7 +16,7 @@ Color::showWarning('2. http://www.blogdaren.com [Warning]' . PHP_EOL.PHP_EOL);
 Color::showError('3. http://www.blogdaren.com [Error]' . PHP_EOL . PHP_EOL);
 
 //level: custom
-Color::display('4. http://www.blogdaren.com [Custom]' . PHP_EOL . PHP_EOL, 'yellow', 'blue');
+Color::show('4. http://www.blogdaren.com [Custom]' . PHP_EOL . PHP_EOL, 'yellow', 'blue');
 
 //get colored string and show it
 echo Color::getColoredString('5. http://www.blogdaren.com [Fetch]' . PHP_EOL . PHP_EOL, 'white', 'cyan');

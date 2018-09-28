@@ -63,7 +63,7 @@ class Color
     }
 
     /**
-     * @brief    display colored custom string 
+     * @brief    display colored custom string  -> will be removed in future !!!
      *
      * @param    string  $string
      * @param    string  $fg
@@ -72,6 +72,20 @@ class Color
      * @return   none
      */
     static public function display($string, $fg = 'yellow', $bg = 'green', $decoration = '')
+    {
+        echo self::show($string, $fg, $bg, $decoration);
+    }
+
+    /**
+     * @brief    display colored custom string 
+     *
+     * @param    string  $string
+     * @param    string  $fg
+     * @param    string  $bg
+     *
+     * @return   none
+     */
+    static public function show($string, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
         echo self::getColoredString($string, $fg, $bg, $decoration);
     }
