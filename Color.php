@@ -21,7 +21,7 @@ class Color
      */
     static public function showInfo($string)
     {
-        echo ShellColor::getColoredString($string, 'black', 'green');
+        echo ShellColor::getColorfulText($string, 'black', 'green');
     }
 
     /**
@@ -33,7 +33,7 @@ class Color
      */
     static public function showWarning($string)
     {
-        echo ShellColor::getColoredString($string, 'black', 'yellow');
+        echo ShellColor::getColorfulText($string, 'black', 'yellow');
     }
 
     /**
@@ -45,7 +45,7 @@ class Color
      */
     static public function showError($string)
     {
-        echo ShellColor::getColoredString($string, 'white', 'red');
+        echo ShellColor::getColorfulText($string, 'white', 'red');
     }
 
     /**
@@ -57,9 +57,9 @@ class Color
      *
      * @return   string
      */
-    static public function getColoredString($string, $fg = 'yellow', $bg = 'green', $decoration = '')
+    static public function getColorfulText($string, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
-        return ShellColor::getColoredString($string, $fg, $bg, $decoration);
+        return ShellColor::getColorfulText($string, $fg, $bg, $decoration);
     }
 
     /**
@@ -87,6 +87,6 @@ class Color
      */
     static public function show($string, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
-        echo self::getColoredString($string, $fg, $bg, $decoration);
+        echo self::getColorfulText($string, $fg, $bg, $decoration);
     }
 }

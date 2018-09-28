@@ -79,7 +79,7 @@ class ShellColor
     }
 
     /**
-     * @brief    getColoredString   
+     * @brief    getColorfulText   
      *
      * @param    string         $text              原始文本
      * @param    string         $foregroundColor   前景色代码
@@ -88,7 +88,7 @@ class ShellColor
      *
      * @return   string
      */
-    static public function getColoredString($text = '', $foregroundColor = null, $backgroundColor = null, $decoration = '')
+    static public function getColorfulText($text = '', $foregroundColor = null, $backgroundColor = null, $decoration = '')
     {
         $coloredString = "";
         $many_decorations = !is_array($decoration) ? array($decoration) : $decoration;
