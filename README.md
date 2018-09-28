@@ -1,5 +1,5 @@
 ## What is it?
-A toolkit used to display customizable & colored text on terminal with PHP
+A toolkit used to display customizable & colorful text on terminal with PHP
 
 ## How to use?
 ```
@@ -27,15 +27,15 @@ echo PHP_EOL . PHP_EOL;
 Color::show('4. http://www.blogdaren.com [Custom]');
 echo PHP_EOL . PHP_EOL;
 
-//get colored string and show it
+//get colorful text and show it
 echo Color::getColorfulText('5. http://www.blogdaren.com [Fetch]', 'white', 'cyan');
 echo PHP_EOL . PHP_EOL;
 
-//get colored & blinked string and show it
+//get colorful & blinked text and show it
 echo Color::getColorfulText('6. http://www.blogdaren.com [Blink]', 'light_blue', 'magenta', array('blink'));
 echo PHP_EOL . PHP_EOL;
 
-//get colored & underlined string and show it
+//get colorful & underlined text and show it
 echo Color::getColorfulText('7. http://www.blogdaren.com [Underline]', 'white', 'magenta', 'underline');
 echo PHP_EOL . PHP_EOL;
 ```
