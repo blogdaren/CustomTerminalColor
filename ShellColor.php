@@ -32,6 +32,14 @@ class ShellColor
         'light_purple'  => '1;35',
         'light_cyan'    => '1;36',
         'white'         => '1;37',
+        /*'black'         => '1;30',
+        'red'           => '1;31',
+        'green'         => '1;32',
+        'brown'         => '1;33',
+        'blue'          => '1;34',
+        'purple'        => '1;35',
+        'cyan'          => '1;36',
+        'gray'          => '1;37',*/
     );
 
     /**
@@ -47,6 +55,15 @@ class ShellColor
         'magenta'       => '45',
         'cyan'          => '46',
         'light_gray'    => '47',
+    );
+
+    /**
+     * extra decoration
+     * @var  private
+     */
+    static private $_decorations = array(
+        'underline'     => '4',
+        'blink'         => '5',
     );
 
     /**
@@ -72,15 +89,25 @@ class ShellColor
     /**
      * @brief    getColoredString   
      *
-     * @param    string  $string
-     * @param    string  $foregroundColor
-     * @param    string  $backgroundColor
+     * @param    string         $text              原始文本
+     * @param    string         $foregroundColor   前景色代码
+     * @param    string         $backgroundColor   背景色代码
+     * @param    string|array   $decoration        额外修饰代码
      *
      * @return   string
      */
-    static public function getColoredString($string = '', $foregroundColor = null, $backgroundColor = null)
+    static public function getColoredString($text = '', $foregroundColor = null, $backgroundColor = null, $decoration = '')
     {
         $coloredString = "";
+        $many_decorations = !is_array($decoration) ? array($decoration) : $decoration;
+
+        foreach($many_decorations as $decoration)
+        {
+            if(isset(static::$_decorations[$decoration])) 
+            {
+                $coloredString .= "\033[" . static::$_decorations[$decoration] . "m";
+            }
+        }
 
         if(isset(static::$_foregroundColors[$foregroundColor])) 
         {
@@ -92,7 +119,7 @@ class ShellColor
             $coloredString .= "\033[" . static::$_backgroundColors[$backgroundColor] . "m";
         }
 
-        $coloredString .= $string . "\033[0m";
+        $coloredString .= $text . "\033[0m";
 
         return $coloredString;
     }

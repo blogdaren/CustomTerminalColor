@@ -57,9 +57,9 @@ class Color
      *
      * @return   string
      */
-    static public function getColoredString($string, $fg = 'yellow', $bg = 'green')
+    static public function getColoredString($string, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
-        return ShellColor::getColoredString($string, $fg, $bg);
+        return ShellColor::getColoredString($string, $fg, $bg, $decoration);
     }
 
     /**
@@ -71,8 +71,8 @@ class Color
      *
      * @return   none
      */
-    static public function display($string, $fg = 'yellow', $bg = 'green')
+    static public function display($string, $fg = 'yellow', $bg = 'green', $decoration = '')
     {
-        echo self::getColoredString($string, $fg, $bg);
+        echo self::getColoredString($string, $fg, $bg, $decoration);
     }
 }
