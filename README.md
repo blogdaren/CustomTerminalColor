@@ -1,5 +1,5 @@
 ## What is it?
-Display customizable & colored text on terminal with PHP
+A toolkit used to display customizable & colored text on terminal with PHP
 
 ## How to use?
 ```
