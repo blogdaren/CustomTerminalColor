@@ -32,14 +32,6 @@ class ShellColor
         'light_purple'  => '1;35',
         'light_cyan'    => '1;36',
         'white'         => '1;37',
-        /*'black'         => '1;30',
-        'red'           => '1;31',
-        'green'         => '1;32',
-        'brown'         => '1;33',
-        'blue'          => '1;34',
-        'purple'        => '1;35',
-        'cyan'          => '1;36',
-        'gray'          => '1;37',*/
     );
 
     /**

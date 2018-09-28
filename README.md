@@ -37,3 +37,23 @@ echo Color::getColoredString('7. http://www.blogdaren.com [Underline]' . PHP_EOL
 ## Demonstrate
 ![demo](https://github.com/blogdaren/CustomTerminalColor/blob/master/image/demo.png)
 
+## Available Color Code
+| Foreground  | Background  |  Decoration      |
+| ----------  | ----------  |  ----------      |
+| black       | black       |                  |
+| red         | red         |                  |
+| green       | green       |                  |
+| brown       | yellow      |                  |
+| blue        | blue        |                  |
+| purple      | magenta     |                  |
+| cyan        | cyan        |                  |
+| light_gray  | light_gray  |                  |
+| dark_gray   |             | blink、underline |
+| light_red   |             | blink、underline |
+| light_green |             | blink、underline |
+| light_blue  |             | blink、underline |
+| light_purple|             | blink、underline |
+| light_cyan  |             | blink、underline |
+| white       |             | blink、underline |
+| yellow      |             | blink、underline |
+
