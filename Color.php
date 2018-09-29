@@ -49,7 +49,7 @@ class Color
     }
 
     /**
-     * @brief    get colorful string
+     * @brief    get colorful text
      *
      * @param    string  $text
      * @param    string  $fg
@@ -63,7 +63,7 @@ class Color
     }
 
     /**
-     * @brief    display colorful custom string  -> will be removed in future !!!
+     * @brief    display colorful custom text -> will be removed in future !!!
      *
      * @param    string  $text
      * @param    string  $fg
@@ -77,7 +77,7 @@ class Color
     }
 
     /**
-     * @brief    display colorful custom string 
+     * @brief    show colorful custom text  -> recommed to use
      *
      * @param    string  $text
      * @param    string  $fg
