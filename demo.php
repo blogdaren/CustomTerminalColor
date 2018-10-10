@@ -23,14 +23,14 @@ Color::show('4. http://www.blogdaren.com [Custom]');
 echo PHP_EOL . PHP_EOL;
 
 //get colorful text and show it
-echo Color::getColorfulText('5. http://www.blogdaren.com [Fetch]', 'white', 'cyan');
-echo PHP_EOL . PHP_EOL;
+$text = Color::getColorfulText('5. http://www.blogdaren.com [Fetch]', 'white', 'cyan');
+echo $text . PHP_EOL . PHP_EOL;
 
 //get colorful & blinked text and show it
-echo Color::getColorfulText('6. http://www.blogdaren.com [Blink]', 'light_blue', 'magenta', array('blink'));
-echo PHP_EOL . PHP_EOL;
+$text = Color::getColorfulText('6. http://www.blogdaren.com [Blink]', 'light_blue', 'magenta', array('blink'));
+echo $text . PHP_EOL . PHP_EOL;
 
 //get colorful & underlined text and show it
-echo Color::getColorfulText('7. http://www.blogdaren.com [Underline]', 'white', 'magenta', 'underline');
-echo PHP_EOL . PHP_EOL;
+$text = Color::getColorfulText('7. http://www.blogdaren.com [Underline]', 'white', 'magenta', 'underline');
+echo $text . PHP_EOL . PHP_EOL;
 
