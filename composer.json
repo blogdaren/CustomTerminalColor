@@ -1,0 +1,32 @@
+{
+    "name": "blogdaren/CustomTerminalColor",
+    "type": "library",
+    "keywords": [
+        "event-loop",
+        "asynchronous"
+    ],
+    "homepage": "http://www.blogdaren.com",
+    "license": "MIT",
+    "description": "A toolkit used to display customizable & colorful text on terminal with PHP",
+    "authors": [
+        {
+            "name": "blogdaren",
+            "email": "blogdaren@163.com",
+            "homepage": "http://www.blogdaren.com",
+            "role": "developer"
+        }
+    ],
+    "support": {
+    },
+    "require": {
+        "php": ">=5.3"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "CustomTerminalColor\\": "./"
+        }
+    },
+    "minimum-stability": "dev"
+}
