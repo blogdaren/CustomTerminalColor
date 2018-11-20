@@ -2,7 +2,9 @@
 A toolkit used to display customizable & colorful text on terminal with PHP
 
 ## Installation
+```
 composer require blogdaren/custom-terminal-color
+```
 
 ## How to use?
 ```
