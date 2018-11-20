@@ -1,10 +1,14 @@
 ## What is it?
 A toolkit used to display customizable & colorful text on terminal with PHP
 
+## Installation
+composer require blogdaren/custom-terminal-color
+
 ## How to use?
 ```
 <?php
-require_once __DIR__ . '/Autoloader.php';
+//require_once __DIR__ . '/Autoloader.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use CustomTerminalColor\Color;
 
