@@ -2,8 +2,6 @@
     "name": "blogdaren/custom-terminal-color",
     "type": "library",
     "keywords": [
-        "event-loop",
-        "asynchronous"
     ],
     "homepage": "http://www.blogdaren.com",
     "license": "MIT",
