@@ -90,6 +90,9 @@ class ShellColor
      */
     static public function getColorfulText($text = '', $foregroundColor = null, $backgroundColor = null, $decoration = '')
     {
+        //if windows, return origin text directly
+        if('\\' === DIRECTORY_SEPARATOR) return $text;
+
         $colorfulText = "";
         $many_decorations = !is_array($decoration) ? array($decoration) : $decoration;
 
